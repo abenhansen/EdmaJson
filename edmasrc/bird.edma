@@ -1,0 +1,21 @@
+ValueDomain Species : String[1..MAX]
+ValueDomain Fly : Boolean
+ValueDomain Color : String[1..MAX]
+ValueDomain Weight : Float[0..MAX]
+ValueDomain Climate : Enum[Tropical, Dry, Temperate, Continental, Polar]
+ValueDomain Extinct : Boolean
+
+
+
+ValueDomain Bird : Struct
+{
+	 species: Species,
+	 canFly: Fly,
+	 color : Color,
+	 weight: Weight,
+	 climate: Climates,
+	 isExtinct: Extinct
+}
+
+
+ValueDomain Climates : List<Climate>[1..5]
