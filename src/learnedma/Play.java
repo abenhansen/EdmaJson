@@ -1,6 +1,5 @@
 package learnedma;
 
-import com.google.gson.Gson;
 import learnedma.generated.valuedomains.Bird;
 import learnedma.generated.valuedomains.Climates;
 
@@ -11,7 +10,6 @@ public class Play {
 
         Climates climates = Climates.begin().add("Tropical").add("Dry").end();
         Bird bird = Bird.create().species("Phorusrhacidae").canFly(false).color("Grey").weight(0f).climate(climates).isExtinct(true);
-        System.out.println(bird);
 
         System.out.println(toString(bird));
     }
